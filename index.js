@@ -10,7 +10,7 @@ const cors = require("cors");
 
 require("dotenv").config({ path: `.env.${process.env.NODE_ENV}` });
 console.log(`NODE_ENV=${process.env.NODE_ENV}`);
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3006;
 const DATABASE_URL= process.env.DATABASE_URL
 console.log("PORT", PORT)
 
