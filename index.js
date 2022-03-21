@@ -5,9 +5,13 @@ const db = require("./models");
 const columnRoute = require("./routes/columnRoute");
 const cardRoute = require("./routes/cardRoute");
 
-const PORT = 3001;
 const bodyParser = require("body-parser");
 const cors = require("cors");
+
+require("dotenv").config({ path: `.env.${process.env.NODE_ENV}` });
+console.log(`NODE_ENV=${process.env.NODE_ENV}`);
+const PORT = process.env.PORT;
+console.log("PORT", PORT)
 
 app.use(cors());
 
