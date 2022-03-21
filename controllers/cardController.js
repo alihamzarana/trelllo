@@ -94,7 +94,7 @@ exports.updateCard = async (req, res) => {
     }
   } catch (error) {
     res.json({
-      status: "success",
+      status: "error",
       message: error.message,
     });
   }

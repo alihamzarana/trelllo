@@ -29,7 +29,9 @@ app.use(express.json());
 // app.use(express.urlencoded({ extended: true }));
 
 db.sequelize.sync().then(() => {
-  app.listen(PORT, () => {
+  app.listen(process.env.PORT || 3006, () => {
     console.log(`listening on: http://localhost:${PORT}`);
   });
-});
+}).catch(error => {
+  console.log("error", error)
+})
