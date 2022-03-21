@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "123456",
-    "database": "trelloDb",
-    "host": "127.0.0.1",
+    "username": "ifegrrnhwdyjly",
+    "password": "f7e2f2443d8c9c5942b7b1dac7d9613b2c9c34510dfca1f3ce2f0250b4a63489",
+    "database": "dfad5gbjhg5hlp",
+    "host": "ec2-54-226-18-238.compute-1.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "123456",
-    "database": "trelloDb",
-    "host": "127.0.0.1",
+    "username": "ifegrrnhwdyjly",
+    "password": "f7e2f2443d8c9c5942b7b1dac7d9613b2c9c34510dfca1f3ce2f0250b4a63489",
+    "database": "dfad5gbjhg5hlp",
+    "host": "ec2-54-226-18-238.compute-1.amazonaws.com",
     "dialect": "mysql"
   }
 }
