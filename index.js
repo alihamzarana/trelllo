@@ -30,7 +30,7 @@ app.use(express.json());
 
 db.sequelize.sync().then(() => {
   app.listen(process.env.PORT || 3006, () => {
-    console.log(`listening on: http://localhost:${PORT}`);
+    console.log(`${process.env.DATABASE_URL}`);
   });
 }).catch(error => {
   console.log("error", error)
