@@ -11,6 +11,7 @@ const cors = require("cors");
 require("dotenv").config({ path: `.env.${process.env.NODE_ENV}` });
 console.log(`NODE_ENV=${process.env.NODE_ENV}`);
 const PORT = process.env.PORT;
+const DATABASE_URL= process.env.DATABASE_URL
 console.log("PORT", PORT)
 
 app.use(cors());
